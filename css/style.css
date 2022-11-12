@@ -168,4 +168,5 @@ main .sub-title-content {
 }
 #footer .footer-group .footer-item li:before {
   content: "-";
+  margin-right: 5px;
 }
