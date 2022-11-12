@@ -146,7 +146,6 @@ main .sub-title-content {
 
 #footer {
   background-color: #333333;
-  color: #FFFFFF;
 }
 #footer .footer-group {
   display: flex;
@@ -154,6 +153,7 @@ main .sub-title-content {
   align-items: center;
   padding: 100px 0;
   line-height: 2;
+  color: #FFFFFF;
 }
 #footer .footer-group .footer-item .footer-title {
   font-weight: bold;
@@ -169,4 +169,11 @@ main .sub-title-content {
 #footer .footer-group .footer-item li:before {
   content: "-";
   margin-right: 5px;
+}
+#footer #copyright {
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+  font-size: 0.6rem;
 }
