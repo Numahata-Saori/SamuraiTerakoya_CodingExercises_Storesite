@@ -1,0 +1,223 @@
+// レスポンシブ用
+$breakpoints: (
+  "tb": "screen and (max-width: 1200px)",
+  "tb-s": "screen and (max-width: 900px)",
+  "sm-x": "screen and (max-width: 600px)",
+  "sm": "screen and (max-width: 480px)",
+  "sm-s": "screen and (max-width: 340px)",
+);
+@mixin bq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+html {
+  font-size: 20px;
+}
+html {
+  @include bq(tb) {
+    font-size: 16px;
+  }
+  @include bq(tb-s) {
+    font-size: 14px;
+  }
+  @include bq(sm-x) {
+    font-size: 12px;
+  }
+  @include bq(sm) {
+    font-size: 10px;
+  }
+}
+
+$margin10: 10px;
+$margin20: 20px;
+$margin30: 30px;
+$margin40: 40px;
+$margin60: 60px;
+$margin80: 80px;
+
+.ly-cont {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a {
+  // 下線を非表示
+  text-decoration: none;
+  color: #24292E;
+}
+
+li {
+  // マーク非表示
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  // アスペクト比
+  object-fit: cover;
+  // 画像下の余白を消す
+  vertical-align: middle;
+}
+
+header {
+  height: 600px;
+  background-image: url(../img/mainvisual.jpg);
+  // 背景の繰り返し設定
+  background-repeat: no-repeat;
+  // 画像のサイズ指定
+  background-size: cover;
+  // 背景の位置指定
+  background-position: center;
+
+  margin-bottom: $margin20;
+
+  .site-title {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+main {
+  .sub-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #24292E;
+
+    padding-top: 60px;
+    padding-bottom: $margin20;
+  }
+
+  .sub-title-content {
+    font-size: 0.7rem;
+  }
+}
+
+#magazine {
+  text-align: center;
+  margin-bottom: $margin80;
+
+  .magazine-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $margin40;
+
+    .magazine-item-group {
+      width: 48%;
+      position: relative;
+    }
+
+    .magazine-info {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      color: #FFFFFF;
+      background-color: #70707080;
+
+      width: 290%;
+      max-width: 100%;
+      padding: 15px 0;
+
+      .magazine-title {
+        font-size: 1rem;
+        font-weight: bold;
+        padding-bottom: 2px;
+      }
+
+      .magazine-content {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+#fashion {
+  height: 520px;
+  background-image: url(../img/fashion.jpg);
+  // 背景の繰り返し設定
+  background-repeat: no-repeat;
+  // 画像のサイズ指定
+  background-size: cover;
+  // 背景の位置指定
+  background-position: center;
+
+  padding-top: 60px;
+  margin-bottom: $margin80;
+
+  position: relative;
+
+  .fashion-item {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+
+    text-align: center;
+
+    .read-btn {
+      display: inline-block;
+      padding: 13px 35px;
+      font-size: 0.6rem;
+      border: solid 1px #2A2A2A;
+      margin-top: $margin30;
+    }
+  }
+}
+
+.catalog-antique {
+  background-color: #F5F5F5;
+
+  .catalog-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+
+    .catalog-item {
+      width: 48%;
+      text-align: center;
+
+      p {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: #333333;
+  color: #FFFFFF;
+
+  .footer-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 0;
+
+    line-height: 2;
+
+    .footer-item {
+      // width: calc(100% / 3);
+
+      .footer-title {
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-bottom: $margin10;
+      }
+      p {
+        font-size: 0.6rem;
+      }
+      li {
+        font-size: 0.6rem;
+      }
+      li:before {
+        content: '-';
+      }
+    }
+  }
+
+}
