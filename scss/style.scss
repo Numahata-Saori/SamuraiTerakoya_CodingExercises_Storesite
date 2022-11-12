@@ -42,7 +42,7 @@ $margin80: 80px;
 }
 
 a {
-  color: #24292E;
+  color: #24292E;//文字色デフォルトから黒色へ
 
   text-decoration: none;// 下線を非表示
 }
@@ -65,6 +65,7 @@ li {
   background-position: center;// 背景の位置指定
   height: 600px;
 
+  // 余白設定
   margin-bottom: $margin20;
 
   .site-title {
@@ -158,6 +159,7 @@ main {
   background-size: cover;// 画像のサイズ指定
   background-position: center;// 背景の位置指定
 
+  // 余白設定
   padding-top: 60px;
   margin-bottom: $margin80;
 
