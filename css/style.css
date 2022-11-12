@@ -29,39 +29,39 @@ html {
 }
 
 a {
-  text-decoration: none;
   color: #24292E;
+  text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 li {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: middle;
-}
-
-header {
-  height: 600px;
+#header {
   background-image: url(../img/mainvisual.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 600px;
   margin-bottom: 20px;
 }
-header .site-title {
+#header .site-title {
   position: absolute;
   top: 30px;
   right: 30px;
 }
 
 main .sub-title {
+  color: #24292E;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #24292E;
   padding-top: 60px;
   padding-bottom: 20px;
 }
@@ -79,19 +79,19 @@ main .sub-title-content {
   margin-top: 40px;
 }
 #magazine .magazine-item .magazine-item-group {
-  width: 48%;
   position: relative;
+  width: 48%;
 }
 #magazine .magazine-item .magazine-info {
+  background-color: rgba(112, 112, 112, 0.5019607843);
+  color: #FFFFFF;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  background-color: rgba(112, 112, 112, 0.5019607843);
+  padding: 15px 0;
   width: 290%;
   max-width: 100%;
-  padding: 15px 0;
 }
 #magazine .magazine-item .magazine-info .magazine-title {
   font-size: 1rem;
@@ -120,11 +120,11 @@ main .sub-title-content {
   text-align: center;
 }
 #fashion .fashion-item .read-btn {
-  display: inline-block;
-  padding: 13px 35px;
   font-size: 0.6rem;
   border: solid 1px #2A2A2A;
+  display: inline-block;
   margin-top: 30px;
+  padding: 13px 35px;
 }
 
 .catalog-antique {
@@ -132,13 +132,13 @@ main .sub-title-content {
 }
 .catalog-antique .catalog-group {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 60px 0;
 }
 .catalog-antique .catalog-group .catalog-item {
-  width: 48%;
   text-align: center;
+  width: 48%;
 }
 .catalog-antique .catalog-group .catalog-item p {
   padding-bottom: 30px;
@@ -148,12 +148,12 @@ main .sub-title-content {
   background-color: #333333;
 }
 #footer .footer-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 0;
-  line-height: 2;
   color: #FFFFFF;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
 }
 #footer .footer-group .footer-item .footer-title {
   font-weight: bold;
@@ -172,8 +172,7 @@ main .sub-title-content {
 }
 #footer #copyright {
   background-color: #FFFFFF;
-  text-align: center;
-  width: 100%;
-  padding: 30px 0;
   font-size: 0.6rem;
+  text-align: center;
+  padding: 30px 0;
 }
