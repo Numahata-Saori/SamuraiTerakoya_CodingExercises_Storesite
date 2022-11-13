@@ -69,7 +69,6 @@ li {
   margin-bottom: $margin20;
 
   .site-title {
-    // 位置設定
     position: absolute;
     top: 30px;
     right: 30px;
@@ -78,80 +77,66 @@ li {
 
 main {
   .sub-title {
-    // 文字設定
     color: #24292E;
     font-size: 1.2rem;
     font-weight: bold;
 
-    // 余白設定
     padding-top: 60px;
     padding-bottom: $margin20;
   }
 
   .sub-title-content {
-    // 文字設定
     font-size: 0.7rem;
   }
 }
 
-#magazine {
-  // 位置設定
+.magazine {
   text-align: center;
 
-  // 余白設定
   margin-bottom: $margin80;
 
-  .magazine-item {
-    // 位置設定
+  .item {
     display: flex;
     justify-content: space-between;
 
-    // 余白設定
     margin-top: $margin40;
 
-    .magazine-item-group {
-      // 位置設定
+    &__group {
       position: relative;
       width: 48%;
-    }
 
-    .magazine-info {
-      // 背景画像
-      background-color: #70707080;
+      &__info {
+        background-color: #70707080;
 
-      // 文字設定
-      color: #FFFFFF;
+        color: #FFFFFF;
 
-      // 画像中央に文字を表示
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+        // 画像中央に文字を表示
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
 
-      // 余白設定
-      padding: 15px 0;
+        padding: 15px 0;
 
-      width: 290%;
-      max-width: 100%;
+        width: 290px;
+        max-width: 100%;
 
-      .magazine-title {
-        // 文字設定
-        font-size: 1rem;
-        font-weight: bold;
+          &__title {
+            font-size: 1rem;
+            font-weight: bold;
 
-        // 余白設定
-        padding-bottom: 2px;
-      }
+            padding-bottom: 2px;
+          }
 
-      .magazine-content {
-        // 文字設定
-        font-size: 0.7rem;
+          &__content {
+            font-size: 0.7rem;
+          }
       }
     }
   }
 }
 
-#fashion {
+.fashion {
   // 背景画像設定
   height: 520px;
   background-image: url(../img/fashion.jpg);
@@ -159,32 +144,26 @@ main {
   background-size: cover;// 画像のサイズ指定
   background-position: center;// 背景の位置指定
 
-  // 余白設定
   padding-top: 60px;
   margin-bottom: $margin80;
 
-  // .fashion-itemで画像上に文字を表示
   position: relative;
 
-  .fashion-item {
+  .item {
     // 画像上に文字を表示
     position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%, 0);
 
-    // 位置設定
     text-align: center;
 
-    .read-btn {
-      // 文字設定＆枠設定
+    &__read-btn {
       font-size: 0.6rem;
       border: solid 1px #2A2A2A;
 
-      // 位置設定
       display: inline-block;
 
-      // 余白設定
       margin-top: $margin30;
       padding: 13px 35px;
     }
@@ -195,17 +174,14 @@ main {
   // 背景
   background-color: #F5F5F5;
 
-  .catalog-group {
-    // 位置設定
+  .group {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    // 余白設定
     padding: 60px 0;
 
-    .catalog-item {
-      // 位置設定
+    &__item {
       text-align: center;
       width: 48%;
 
@@ -216,47 +192,38 @@ main {
   }
 }
 
-#footer {
+.footer {
   background-color: #333333;
 
-  .footer-group {
-    // 文字設定
+  .group {
     color: #FFFFFF;
     line-height: 2;
 
-    // 位置設定
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    // 余白設定
     padding: 100px 0;
 
-    .footer-item {
+    .item {
       // width: calc(100% / 3);
 
-      .footer-title {
-        // 文字設定
+      &__title {
         font-weight: bold;
         font-size: 0.8rem;
 
-        // 余白設定
         margin-bottom: $margin10;
       }
 
-      p {
-        // 文字設定
+      &__content {
         font-size: 0.6rem;
       }
 
       li {
-        // 文字設定
-        font-size: 0.6rem;
-      }
-
-      li:before {
-        content: '-';
-        margin-right: 5px;
+        &:before {
+          content: '-';
+          margin-right: 5px;
+        }
       }
     }
   }
