@@ -29,7 +29,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 100vh;
   margin-bottom: 20px;
 }
 .header .site-title {
